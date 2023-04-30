@@ -1,0 +1,61 @@
+:root {
+    --background: #C7DBD2;
+    --overlays: #D1E7DD;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 50%;
+}
+
+.form-group {
+    display: none;
+}
+
+.mybuttons{
+    text-align: center;
+}
+
+.form-group #updateData{
+    display: none;
+}
+
+#addData, #submitData, #updateData{
+    background-color: var(--overlays);
+    color: rgb(7, 15, 40);
+    font-size: 16px;
+    width: 30%;
+
+    border: none;
+    margin: 10px 10px;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+#addData:hover{
+    background-image: linear-gradient(to right, #a0d38a , var(--overlays))
+}
+
+  

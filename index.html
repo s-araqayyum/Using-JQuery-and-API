@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Sara's Assignment</title>
+</head>
+
+<body style="background-color: #C7DBD2;">
+  
+  <img src = "plant.gif">
+  <div class="mybuttons">
+    <button id="addData">Add Articles</button>
+  </div>
+
+  <!-- Form Layout using Bootstrap -->
+  <div class="container" style="width: 30%; margin-bottom: 40px; background-image: url(vine.gif);">
+    <form class="form-group">
+      
+      <label for="title-input">Article Name</label>
+      <input type="text" class="form-control" id="title-input">
+
+      <label for="body-input">Article Category</label>
+      <select class="form-control">
+        <option value="" disabled selected>Select your option</option>
+        <option>women's clothing</option>
+        <option>men's clothing</option>
+        <option>jewelery</option>
+        <option>electronics</option>
+      </select>
+      <br>
+
+      <button type="submit" id="submitData">Add</button>
+      <button id="updateData">Update</button>
+
+    </form>
+  </div>
+    <!-- Table Layout using Bootstrap -->
+  <div class = "container">
+    <table class="table table-success table-striped" id="table">
+      <thead id="headerOfTable">
+        <tr id="headerRow">
+          <th>ID</th>
+          <th>Article Name</th>
+          <th>Category</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="bodyOfTable">
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
